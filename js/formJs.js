@@ -77,7 +77,7 @@ function newFunction() {
 			if (telefone == '') {
 				return false;
 			}
-			if (telefone.match(/^\([0-9]{2}\)[0-9]{5}-[0-9]{4}$/) == null) {
+			if (telefone.match(/^\[0-9]{5}-[0-9]{4}$/) == null) {
 				return false;
 			}
 		}
