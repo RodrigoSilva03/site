@@ -77,7 +77,7 @@ function newFunction() {
 			if (telefone == '') {
 				return false;
 			}
-			if (telefone.match(/^\([0-9]{2}\[0-9]{5}-[0-9]{4}$/) == null) {
+			if (telefone.match(/^\([0-9]{2}\)[0-9]{5}-[0-9]{4}$/) == null) {
 				return false;
 			}
 		}
@@ -85,7 +85,7 @@ function newFunction() {
 		function verificarEmail(email) {
 			if (email == '')
 				return false;
-			if (email.match(/^([a-z0-9-_.]{1,})+@+([a-z.]{1,})$/) == null){
+			if (email.match(/^([a-z0-9-_.]{1,})+@+([a-z.]{1,})$/) == null) {
 				return false;
 			}
 		}
