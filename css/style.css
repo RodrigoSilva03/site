@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: tahoma; */
+    font-family: 'Open Sans', sans-serif;
+}
+/* @keyframes bounce{
+    0%, 20%, 60%, 100%{
+        -webkit-transform:translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-transform:translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80%{
+        -webkit-transform:translateY(-10px);
+        transform: translateY(-10px);
+    }
+} */
+
+.clear{
+    clear: both;
+}
+
+html,body{
+    height: 100%;
+}
+
+.sobre .container{
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #2e5f41;
+    /* background-image: url(../img/fundo.jpg); */
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 12px;
+}
+
+.sobre .container .foto-perfil{
+    width: 200px;
+    height: 200px;
+    background-color:white;
+    border: 2px solid rgb(100, 232, 100);
+    margin: 18px auto;
+    border-radius: 100px;
+    background-image: url(../img/foto.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sobre span{
+    color: rgb(100, 232, 100);
+}
+
+.sobre .container p{
+    color: white;
+    margin-top: 18px;
+}
+
+.container .banner > h2{
+    color: white;
+    padding: 1%;
+    font-size: 24px;
+    margin-top: 28px;
+    border-top: 1px solid  rgb(100, 232, 100);
+}
+
+.banner ul{
+    width:50%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.banner li{
+    color:white;
+    font-size: 18px;
+    margin-top: 13px;
+    text-align: left;
+}
+
+
+section.diferenciais{
+	padding: 40px 0;
+    /* background-color: rgba(0, 0, 0, 0.958); */
+}
+
+.diferenciais h2{
+	text-align: center;
+    font-size: 24px;
+    color:#419641;
+    padding-top: 8px;
+}
+
+.box-diferenciais{
+	margin-top:40px;
+}
+
+.box-single-diferencial{
+	float: left;
+	width:33.3%;
+	padding: 2px 8px;
+}
+.box-single-diferencial img{
+    width:60px;
+    height:60px;
+}
+
+.box-single-diferencial{
+	font-size: 30px;
+	text-align: center;
+	/* color:blueviolet; */
+    color: white;
+}
+
+.box-single-diferencial p{
+	font-size: 18px;
+    margin-top: 18px;
+    color: #2e5f41;
+}
+
+section .contato{
+    width: 100%;
+    height: 580px;
+}
+
+.container{
+    width: 100%;
+    padding: 30px;
+}
+
+.w50 h2{
+    padding-bottom: 8%;
+} 
+
+.w50{
+    color: black;
+    width: 50%;
+    float: left;
+    margin-top:14px;
+    
+}
+li.dropdown{
+    width:60px;
+}
+.w50 p > a{
+    color:blue;
+}
+
+.w50 p{
+    width: 50%;
+    padding:10px;
+}
+
+.w50 p a:hover{
+    color:blueviolet;
+    /* transition: 1s;*/
+}
+
+.form{
+    float: right;
+    width: 50%;
+    padding-right: 10px;
+    padding-bottom: 2%;
+}
+.form{
+    width:50%;
+}
+
+.form p{
+    margin: auto;
+    max-width: 480px;
+    padding: 2%;
+    font-size: 18px;
+    text-align: center;
+    color: #419641;;
+}
+::-webkit-input-placeholder{
+    color: #ccc;
+}
+:-moz-placeholder{
+    color: #ccc;
+}
+:-ms-input-placeholder{
+    color: #ccc;
+}
+.form form input[type=text]{
+    width: 100%;
+	max-width: 480px;
+	margin-top: 8px;
+	height: 58px;
+	padding-left: 8px;
+	line-height: 58px;
+    border-radius: 5px;
+	border: 1px solid rgb(200,200,200);
+}
+
+.form form input[type=submit]{
+	border:0;
+	width: 165px;
+	height: 44px;
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+	margin-top: 15px;
+    border-radius: 5px;
+    /* background-color: rgba(100, 232, 100, 0.778); */
+    background-color: #419641;
+    background-position: 0 -15px;
+}
+
+.form form input[type=submit]:hover{
+    animation: bounce 1s;
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+footer .container{
+    text-align: center;
+    color:white;
+    width: 100%;
+    padding: 15px;
+    background-color: #419641;
+    border-color: #398439;
+}
+
+/*modo responsivo*/
+@media screen and (max-width:800px){
+    .w50{
+        width: 100%;
+        float: none;
+        padding-left: 25%;
+    }
+    .form{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    
+}
+    
+@media screen and (max-width:600px){
+    .box-single-diferencial{
+        width: 100%;
+        padding-top: 2%;
+    }
+}
